@@ -1,0 +1,90 @@
+/* 分上下两部分 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: 243, 244, 243;
+}
+
+/* 上部分：按左右排列 */
+.top {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.topSlide{
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* 上部分：按左右排列 */
+.topContainer {
+  text-align: center;
+}
+
+.topImg {
+  height: 85vh;
+  width: 100%;
+  /* 使图片两端对齐并覆盖容器 */
+  object-fit: cover;
+}
+
+/* 在图片中间显示文字和按钮 */
+.overlayImg {
+  position: absolute;
+  top: 50%; /* 定位按钮在图片垂直中间 */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 使按钮居中 */
+  z-index: 10; /* 确保按钮在图片上方 */
+  font-size: 2rem;
+  color: white;
+}
+
+/* 下部分：按左右排列 */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainImg {
+  width: calc(50% - 20px); /* 假设图片之间有20px间隔，每张图片的宽度为50%减去每侧的间隔 */
+  /* 使图片两端对齐并覆盖容器 */
+  object-fit: cover; 
+  margin: 20px 10px;
+}
+
+/* 为移动端设置样式 */
+@media screen and (max-width: 768px) {
+  .top {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .topSlide{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* 上部分：按左右排列 */
+  .topContainer {
+    text-align: center;
+  }
+
+  .topImg {
+    height: 60vh;
+    width: 100%;
+    /* 使图片两端对齐并覆盖容器 */
+    object-fit: cover;
+  }
+}
+
