@@ -15,7 +15,7 @@
   justify-content: center;
   height: 90vh;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .topSlide{
@@ -44,6 +44,13 @@
   z-index: 10; /* 确保按钮在图片上方 */
   font-size: 2rem;
   color: white;
+}
+/* 中间宣传文字 */
+.midContent {
+  font-size: 1.2rem;
+  font-family: Playfair Display, serif;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* 下部分：按左右排列 */

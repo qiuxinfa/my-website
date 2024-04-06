@@ -1,8 +1,84 @@
 .container {
+  width: 100%;
+}
+
+/* 文章标题 */
+.title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 80vh;
-  width: 80%;
-  background-color: blue;
+  width: 100%;
 }
+
+.contentP {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+  font-family: Quattrocento Sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* 底部图片：按左右排列 */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.divImg {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* 假设图片之间有20px间隔，每张图片的宽度为50%减去每侧的间隔 */
+  /* 使图片两端对齐并覆盖容器 */
+  object-fit: cover; 
+  margin: 10px 5px;
+}
+
+.mainImg {
+  /* 使图片两端对齐并覆盖容器 */
+  object-fit: cover; 
+  margin: 2px;
+  flex: 1 1 80%;
+}
+
+.textImg {
+  margin: 2px;
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+/* 为移动端设置样式 */
+@media screen and (max-width: 768px) {
+  .contentP {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: justify;
+    font-family: Quattrocento Sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+/* 底部图片：按左右排列 */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+}
+

@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import styles from './styles.module.css'
+import Layout from '@theme/Layout'
 
 /**
  * 
@@ -73,29 +74,34 @@ export default function Homepage () {
   ]
 
   return (
-    <div className={styles.container}>
-      <div className={styles.top}>
-        <Slider {...settings} className={styles.topSlide}>
-          {slideImages.map((image, index) => (
-            <div key={index} className={styles.topContainer}>
-              <img className={styles.topImg} src={image.path} alt={`Image ${index + 1}`} />
-              <div className={styles.overlayImg}>
-                <h2 >
-                  {image.name}
-                </h2>
-                <Link to={siteConfig.baseUrl + 'detail'}>
-                  VIEW MORE
-                </Link>
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description={siteConfig.tagline}>
+      <div className={styles.container}>
+        <div className={styles.top}>
+          <Slider {...settings} className={styles.topSlide}>
+            {slideImages.map((image, index) => (
+              <div key={index} className={styles.topContainer}>
+                <img className={styles.topImg} src={image.path} alt={`Image ${index + 1}`} />
+                <div className={styles.overlayImg}>
+                  <h2 >
+                    {image.name}
+                  </h2>
+                  <Link to={siteConfig.baseUrl + 'detail'} style={{ backgroundColor: 'rgb(93, 139, 159)' }}>
+                    VIEW MORE
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
+          </Slider>
+        </div>
+        <div className={styles.midContent}>Move the green forest to your home</div>
+        <div className={styles.mainContainer}>
+          {images.map((image, index) => (
+            <img className={styles.mainImg} key={index} src={image.path} alt="图片" />
           ))}
-        </Slider>
+        </div>
       </div>
-      <div className={styles.mainContainer}>
-        {images.map((image, index) => (
-          <img className={styles.mainImg} key={index} src={image.path} alt="图片" />
-        ))}
-      </div>
-    </div>
+    </Layout>
   )
 }

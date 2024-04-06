@@ -86,11 +86,7 @@ const config = {
         links: [
           {
             label: 'HOME',
-            href: 'https://qiuxinfa.github.io/ever-green',
-          },
-          {
-            label: 'ABOOUT',
-            href: 'https://qiuxinfa.github.io/ever-green',
+            href: '/ever-green/',
           },
           {
             label: 'CONTACT',
