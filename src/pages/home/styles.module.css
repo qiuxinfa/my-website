@@ -60,11 +60,96 @@
   justify-content: center;
 }
 
+.divImg {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* 假设图片之间有20px间隔，每张图片的宽度为50%减去每侧的间隔 */
+  margin: 10px 5px;
+}
+
 .mainImg {
-  width: calc(50% - 20px); /* 假设图片之间有20px间隔，每张图片的宽度为50%减去每侧的间隔 */
   /* 使图片两端对齐并覆盖容器 */
   object-fit: cover; 
-  margin: 20px 10px;
+  margin: 2px;
+  flex: 1 1 90%;
+}
+
+.productType {
+  margin: 2px;
+  flex: 1 1 10%;
+  text-align: center;
+}
+
+/* .productDesc {
+  margin: 2px;
+  flex: 1 1 20%;
+  text-align: center;
+} */
+
+.companyTitle {
+  color: rgb(140, 182, 117);
+  text-align: center;
+  margin: 5px auto;
+}
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  /* background-color: rgb(140, 182, 117); */
+}
+
+.companyImgDiv {
+  display: flex;
+}
+
+.companyImg {
+  width: 96%;
+  height: 80vh;  
+  /* 使图片两端对齐并覆盖容器 */
+  object-fit: cover;
+}
+
+/* 公司介绍 */
+.companyDescDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  height: 20vh;
+}
+
+.companyDesc {
+  text-indent: 2ch;
+  text-align: left;
+  font-family: Quattrocento Sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* color: white; */
+}
+
+/* 联系详情 */
+.contact {
+  width: 96%;
+  /* background-color: rgb(140, 182, 117); */
+  font-family: Quattrocento Sans, sans-serif;
+  /* color: white; */
+  margin: 2%;
+}
+.contactTitle {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: rgb(140, 182, 117);
+}
+.contactAddress {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 /* 为移动端设置样式 */
@@ -93,5 +178,49 @@
     /* 使图片两端对齐并覆盖容器 */
     object-fit: cover;
   }
+
+  .companyImg {
+    width: 96%;
+    height: 35vh;  
+    /* 使图片两端对齐并覆盖容器 */
+    object-fit: cover;
+  }
+  
+  /* 公司介绍 */
+  .companyDescDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height: 65vh;
+  }
+  /* 联系详情 */
+  .contact {
+    width: 100%;
+    /* background-color: rgb(140, 182, 117); */
+    font-family: Quattrocento Sans, sans-serif;
+    /* color: white; */
+    margin: 10px;
+    margin-top: 20px;
+  }  
+  .companyDesc {
+    text-indent: 2ch;
+    text-align: left;
+    font-family: Quattrocento Sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* color: white; */
+  }
+
+  .contactTitle {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: rgb(140, 182, 117);
+    text-align: center;
+  }
+
 }
 
