@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ever Green',
+  title: 'Evergreen',
   tagline: 'Move the green forest to your home',
   favicon: 'img/favicon.ico',
 
@@ -64,19 +64,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/whatsApp.jpg',
       navbar: {
-        title: 'Ever Green',
-        // logo: {
-        //   alt: 'Ever Green Logo',
-        //   src: 'img/logo.svg',
-        // },
+        title: '',
+        logo: {
+          alt: 'Evergreen Logo',
+          src: 'img/logo.png',
+        },
         // items: [
         //   {
         //     type: 'docSidebar',
         //     sidebarId: 'tutorialSidebar',
-        //     position: 'left',
-        //     label: 'Tutorial',
+        //     position: 'right',
+        //     label: 'whatsApp',
         //   },
         //   { to: '/blog', label: 'Blog', position: 'left' },
         // ],
@@ -93,7 +93,7 @@ const config = {
             href: 'https://qiuxinfa.github.io/ever-green',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ever Green.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Evergreen.`,
       },
       prism: {
         theme: prismThemes.github,
