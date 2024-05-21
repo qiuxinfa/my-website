@@ -105,141 +105,153 @@ export default function Home () {
         </Carousel>
         {/* 产品介绍 */}
         <div className={styles.mainProducts}>MAIN PRODUCTS</div>
-        <Row gutter={16}>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Artificial Trees" src="img/products/1.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Artificial Trees</div>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Artificial Flowers" src="img/products/2.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Artificial Flowers</div>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Artificial Plants" src="img/products/3.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Artificial Plants</div>
-            </Card>
-          </Col>
-        </Row>
-        <Row gutter={16}>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Artificial Green Walls" src="img/products/4.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Artificial Green Walls</div>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Moss Walls" src="img/products/5.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Moss Walls</div>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              bordered={false}
-              styles={{
-                body: { margin: '0', padding: '5px' },
-              }}
-              cover={<img alt="Cactus" src="img/products/6.jpg" />}
-            >
-              <div className={styles.mainProductsDesc}>Cactus</div>
-            </Card>
-          </Col>
-        </Row>
+        <div className={styles.imgDiv}>
+          <Row gutter={16}>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Artificial Trees" src="img/products/ArtificialTrees.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Artificial Trees</div>
+              </Card>
+            </Col>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Artificial Flowers" src="img/products/ArtificialFlowers.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Artificial Flowers</div>
+              </Card>
+            </Col>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Artificial Plants" src="img/products/ArtificialPlants.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Artificial Plants</div>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.imgDiv}>
+          <Row gutter={16}>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Artificial Green Walls" src="img/products/ArtificialGreenWalls.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Artificial Green Walls</div>
+              </Card>
+            </Col>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Moss Walls" src="img/products/MossWalls.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Moss Walls</div>
+              </Card>
+            </Col>
+            <Col span={8}>
+              <Card
+                bordered={false}
+                styles={{
+                  body: { margin: '0', padding: '5px' },
+                }}
+                cover={<img alt="Cactus" src="img/products/Cactus.jpg" />}
+              >
+                <div className={styles.mainProductsDesc}>Cactus</div>
+              </Card>
+            </Col>
+          </Row>
+        </div>
         {/* 公司介绍 */}
-
         <Row>
           <div className={styles.companyTitle}>COMPANY INTRODUCTION</div>
         </Row>
-        <Row>
-          <p className={styles.companyDesc}>
-            Guangzhou Evergreen Arts & Crafts Co.,Ltd has been specialized in Artificial Flowers & Plant
-            with its own factory with experience of more than 10 years in Guangzhou, focusing on providing
-            innovative projects for the global market in many industries, such as interior & exterior decor,
-            horticulture, building materials, supermarket, restaurants & hotels, and landscape design.
-          </p>
-          <p className={styles.companyDesc}>
-            It has a land over 10000 square meters with more than 90 workers, and 70% of our employees
-            have about 3 years' experience. We have over 1000 sets of printing knife molds and over 500
-            sets of leaf molds, which is our advantage. We can customize according to your specific requirements.
-            Our major products are artificial flowers & plants, including Artificial potted plants, Artificial
-            foliage, Faux Hedges, Green wall Panels, Synthetic landscaping trees and so on.
-          </p>
-          <p className={styles.companyDesc}>
-            For now, we've exported to more than 55 different countries and worked with over 120 importers,
-            wholesalers and fashion brands etc, such as Netherlands, UK, Belgium , UAE, Kuwait, the United States,
-            and have won popularity both domestically and internationally due to our advantages in quality and price.
-          </p>
-          <p className={styles.companyDesc}>
-            Responsibility, Honesty, Thankfulness and Innovation are parts of our vision in Evergreen.
-            Happiness, Open mind, Win-Win and Cooperation are our work ethics.
-          </p>
-        </Row>
-        <Row className={styles.rowSpace}>
-          <Col span={24}>
-            <Image preview={false} src='img/company/factory.jpg' />
-          </Col>
-        </Row>
-        <Row className={styles.rowSpace}>
-          <Col span={24}>
-            <Image preview={false} src='img/company/certificates.jpg' />
-          </Col>
-        </Row>
-        <Row gutter={6} className={styles.rowSpace}>
-          <Col span={12}><Image preview={false} src='img/company/1.jpg' /></Col>
-          <Col span={12}><Image preview={false} src='img/company/2.jpg' /></Col>
-        </Row>
-        <Row gutter={6} className={styles.rowSpace}>
-          <Col span={12}><Image preview={false} src='img/company/3.jpg' /></Col>
-          <Col span={12}><Image preview={false} src='img/company/4.jpg' /></Col>
-        </Row>
-        <Row gutter={6} className={styles.rowSpace}>
-          <Col span={6}>
-            <Image preview={false} src='img/company/5.jpg' />
-          </Col>
-          <Col span={6}>
-            <Image preview={false} src='img/company/6.jpg' />
-          </Col>
-          <Col span={6}>
-            <Image preview={false} src='img/company/7.jpg' />
-          </Col>
-          <Col span={6}>
-            <Image preview={false} src='img/company/8.jpg' />
-          </Col>
-        </Row>
+        <div className={styles.imgDiv}>
+          <Row>
+            <Col span={6} offset={3}>
+              <p className={styles.companyDesc}>
+                Guangzhou Evergreen Arts & Crafts Co.,Ltd has been specialized in Artificial Flowers & Plant
+                with its own factory with experience of more than 10 years in Guangzhou, focusing on providing
+                innovative projects for the global market in many industries, such as interior & exterior decor,
+                horticulture, building materials, supermarket, restaurants & hotels, and landscape design.
+              </p>
+            </Col>
+            <Col span={8} offset={4}>
+              <Image preview={false} src='img/company/factory.jpg' />
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.imgDiv}>
+          <Row>
+            <Col span={8} offset={2}>
+              <Image preview={false} src='img/company/certificates.jpg' />
+            </Col>
+            <Col span={6} offset={4}>
+              <p className={styles.companyDesc}>
+                It has a land over 10000 square meters with more than 90 workers, and 70% of our employees
+                have about 3 years' experience. We have over 1000 sets of printing knife molds and over 500
+                sets of leaf molds, which is our advantage. We can customize according to your specific requirements.
+                Our major products are artificial flowers & plants, including Artificial potted plants, Artificial
+                foliage, Faux Hedges, Green wall Panels, Synthetic landscaping trees and so on.
+              </p>
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.imgDiv}>
+          <Row>
+            <Col span={8} offset={2}>
+              <p className={styles.companyDesc}>
+                For now, we've exported to more than 55 different countries and worked with over 120 importers,
+                wholesalers and fashion brands etc, such as Netherlands, UK, Belgium , UAE, Kuwait, the United States,
+                and have won popularity both domestically and internationally due to our advantages in quality and price.
+              </p>
+              <p className={styles.companyDesc}>
+                Responsibility, Honesty, Thankfulness and Innovation are parts of our vision in Evergreen.
+                Happiness, Open mind, Win-Win and Cooperation are our work ethics.
+              </p>
+            </Col>
+            <Col span={8} offset={2}>
+              <Image preview={false} src='img/company/merge14.jpg' />
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.lastDiv}>
+          <Row gutter={6}>
+            <Col span={6}>
+              <Image preview={false} src='img/company/5.jpg' />
+            </Col>
+            <Col span={6}>
+              <Image preview={false} src='img/company/6.jpg' />
+            </Col>
+            <Col span={6}>
+              <Image preview={false} src='img/company/7.jpg' />
+            </Col>
+            <Col span={6}>
+              <Image preview={false} src='img/company/8.jpg' />
+            </Col>
+          </Row>
+        </div>
       </Content>
       <Footer style={footerStyle}>
         <Row align='middle' justify='start'>
-          <Col span={8}>
+          <Col span={10}>
             <div className={styles.contact}>
               <div className={styles.contactTitle}>Contact</div>
               <div className={styles.contactAddress}>
@@ -249,17 +261,17 @@ export default function Home () {
                 ADD: No 512, Gaoxin Road, Huadu District, Guangzhou, China
               </div>
               <div className={styles.contactAddress}>
-                T: 0086 150 1190 1003
+                TEL: 0086 150 1190 1003
               </div>
               <div className={styles.contactAddress}>
-                M: artificial.evergreen@gmail.com
+                EMAIL: artificial.evergreen@gmail.com
               </div>
             </div>
           </Col>
-          <Col span={8}><Image preview={false} src='img/logo.png' /></Col>
-          <Col span={2}><Image preview={false} onClick={() => openUrl('http://www.facebook.com')} src='img/social/facebook.png' /></Col>
-          <Col span={2}><Image preview={false} onClick={() => openUrl('http://www.facebook.com')} src='img/social/instagram.png' /></Col>
-          <Col span={2}><Image preview={false} onClick={() => openUrl('https://whatsapp.en.softonic.com/')} src='img/social/whatsapp.png' /></Col>
+          <Col span={1}><Image preview={false} onClick={() => openUrl('https://www.facebook.com/evergreen.arts.crafts/')} src='img/social/facebook.jpg' /></Col>
+          <Col span={1}><Image preview={false} onClick={() => openUrl('https://www.instagram.com/')} src='img/social/instagram.jpg' /></Col>
+          <Col span={1}><Image preview={false} onClick={() => openUrl('https://wa.me/+8615011901003?text=Hi')} src='img/social/whatsapp.jpg' /></Col>
+          <Col span={8} offset={2}><Image preview={false} src='img/logo.png' /></Col>
         </Row>
       </Footer>
     </Layout>

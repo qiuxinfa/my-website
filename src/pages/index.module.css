@@ -36,11 +36,19 @@ footerStyle{
 }
 
 .mainProducts{
+  color: rgb(140, 182, 117);
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 5px auto;
+  margin: 15px auto;
 }
-
+.imgDiv{
+  margin: 20px;
+  height: 420px;
+}
+.lastDiv{
+  margin: 0 20px;
+  height: 260px;
+}
 .mainProductsDesc{
   font-size: 0.8rem;
   margin: 5px auto;
@@ -49,16 +57,17 @@ footerStyle{
 /* 公司介绍 */
 .companyTitle {
   color: rgb(140, 182, 117);
-  text-align: center;
-  margin: 5px auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 15px auto;
 }
 .companyDesc {
+  font-size: 1.2rem;
   text-indent: 2ch;
   text-align: left;
   font-family: Quattrocento Sans, sans-serif;
   font-style: normal;
-  font-weight: 100;
-  /* line-height: 1.5; */
+  margin: 25px auto;
 }
 .rowSpace{
   margin: 5px auto;
