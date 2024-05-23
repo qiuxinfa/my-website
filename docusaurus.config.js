@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://qiuxinfa.github.io',
+  url: 'https://evergreenac.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/ever-green/',
@@ -90,7 +90,7 @@ const config = {
           },
           {
             label: 'CONTACT',
-            href: 'https://qiuxinfa.github.io/ever-green',
+            href: 'https://evergreenac.github.io/ever-green',
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Evergreen.`,
